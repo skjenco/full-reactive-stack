@@ -19,7 +19,7 @@ services:
       # Overrides the host in the Spring Boot application to use the Docker's hostname
       - SPRING_DATA_MONGODB_HOST=mongo
     ports:
-      - "8080:8080"
+      - "9080:9080"
     networks:
       - network-reactive
 
@@ -28,7 +28,7 @@ services:
       context: ../angular-reactive
     image: angular-reactive-tpd
     ports:
-      - "8900:80"
+      - "8900:8000"
     networks:
       - network-reactive
 
